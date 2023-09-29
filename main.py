@@ -5,15 +5,23 @@
 import numpy as np
 
 # Создаем вектор от 10 до 500
-vector = np.arange(10, 501)
+def chat_solution():
+    vector = np.arange(10, 501)
 
-# Возводим все элементы в квадрат
-vector_squared = vector ** 2
+    # Возводим все элементы в квадрат
+    vector_squared = vector ** 2
 
-# Вычитаем из каждого элемента число 234
-result_vector = vector_squared - 234
+    # Вычитаем из каждого элемента число 234
+    result_vector = vector_squared - 234
 
-# Находим сумму всех элементов вектора
-sum_result = np.sum(result_vector)
+    # Находим сумму всех элементов вектора
+    sum_result = np.sum(result_vector)
 
-print(sum_result)
+    print(sum_result)
+
+def my_soultion():
+    vector = np.arange(10,501)
+    sum_result = sum((vector**2)-234)
+    print(sum_result)
+
+'''Ответ получается одинаковым !'''
